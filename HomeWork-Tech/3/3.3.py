@@ -15,7 +15,7 @@ def aref_arg(x1, x2):
     elif (x1 < 0 and x2 > 0) or (x1 > 0 and x2 < 0):
         return 0
 
-a = float(input('Enter 1st num: '))
-b = float(input('Enter 2nd num  '))
+a = int(input('Enter 1st num: '))
+b = int(input('Enter 2nd num  '))
 
 print(aref_arg(a, b))
