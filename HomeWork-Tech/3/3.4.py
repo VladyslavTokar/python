@@ -7,12 +7,13 @@
 """
 
 def maxi(x1, x2, x3):
-    max_num = int(x1)
-    t = (x1, x2, x3)
-    for i in t:
-        if int(i) > int(x1):
-            max_num = i
-    return max_num
+    l = [x1, x2, x3]
+    min_num = int(x1)
+    for i in l:
+        if int(i) < int(x1):
+            min_num = i
+    l.remove(min_num)
+    return l
 
 a = input('Enter 1st num: ')
 b = input('Enter 2nd num: ')
